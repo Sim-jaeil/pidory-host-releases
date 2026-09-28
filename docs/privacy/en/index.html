@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pidory Privacy Policy</title>
+<style>
+body{max-width:44rem;margin:2rem auto;padding:0 1.2rem;font:16px/1.7 -apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;color:#1d1d1f;background:#fff}
+h1{font-size:1.6rem}h2{font-size:1.1rem;margin-top:2rem}li{margin:.3rem 0}
+.meta{color:#6e6e73}a{color:#0066cc}
+@media (prefers-color-scheme:dark){body{color:#f5f5f7;background:#1d1d1f}.meta{color:#a1a1a6}a{color:#2997ff}}
+</style>
+</head>
+<body>
+<p class="meta"><a href="../">한국어</a></p>
+<h1>Pidory Privacy Policy</h1>
+<p class="meta">Effective: 2026-09-28</p>
+
+<p>The Pidory app (iPhone, iPad and Mac) works by connecting to a <strong>Pidory host</strong> that the user installs and runs
+on their own Mac. This policy covers the Pidory app and the Pidory host program the developer distributes publicly.</p>
+
+<h2>1. What the developer collects: nothing</h2>
+<p>The developer does not collect or store your conversations, photos or files, accounts, device information or usage.
+Neither the app nor the host program contains analytics, advertising or crash-reporting tools, and nothing is sent to
+any server run by the developer. The developer therefore holds no personal data and shares none with third parties.</p>
+
+<h2>2. Where conversations and files go</h2>
+<ul>
+<li>Messages, photo and file attachments, and anything sent through the share sheet or Shortcuts go <strong>only to the Pidory host you connect to</strong>. Conversation history is stored on that host (its operator's Mac).</li>
+<li>The host sends work to the AI services its operator has connected to it (for example Anthropic Claude, OpenAI Codex, xAI Grok), and notifications to any webhook addresses the operator has registered. Their processing follows each service's own terms and privacy policy.</li>
+<li>If you were invited to a host someone else runs, that host's operator keeps and manages the conversations.</li>
+</ul>
+
+<h2>3. What is stored on your device</h2>
+<ul>
+<li>The connection key is kept, paired with the host address, in the device keychain as <strong>this-device-only</strong> and is not synced through iCloud Keychain. On iPhone and iPad the host address and connection key are also kept the same way in the app's shared keychain so the share sheet and Shortcuts can use them.</li>
+<li>The host address, unfinished drafts, messages not yet sent, your place in the app and notification settings are kept in the app's own storage.</li>
+<li>Files to attach and photos taken with the camera are copied briefly to the app's temporary folder for sending, then removed. The camera is used only to take a photo to attach to a conversation.</li>
+<li>Disconnecting in the app's settings removes that connection key. On iPhone and iPad, deleting the app removes its storage, but keychain items holding the connection key and host address can remain. On Mac, moving the app to the Trash leaves both its storage and its keychain items. To remove everything, disconnect before deleting the app.</li>
+</ul>
+
+<h2>4. Notifications</h2>
+<ul>
+<li><strong>iPhone and iPad:</strong> when you turn notifications on, this device's Apple push token and a random device identifier created by the app are registered with the host you connect to. The host sends notifications directly through the Apple Push Notification service (APNs); they do not pass through any server of the developer. The sending setup this needs is handed by the developer directly to the host's operator, and the host uses it only to prove to Apple that it may send; it gives the developer no push tokens or notification contents. Without this setup on the host, no notifications reach iPhone or iPad.</li>
+<li>A notification contains the conversation title, the sender's name, the kind of event, the unread conversation count and internal identifiers the app uses to open the right screen. While <strong>message preview</strong> is on in a conversation's notification settings (the default), the start of the message (up to 140 characters) is included too and passes through Apple's push servers. Turning preview off leaves the message text out.</li>
+<li><strong>Mac:</strong> while the app is running it fetches new notifications from the host and shows them on the Mac. No outside push service is used.</li>
+<li>Turning notifications off, or disconnecting, removes this device's notification registration from the host.</li>
+</ul>
+
+<h2>5. Demo mode</h2>
+<p>Demo mode uses only example data built into the app. It talks to no server and calls no AI service. Everything made during the demo is erased when the demo ends.</p>
+
+<h2>6. Changes to this policy</h2>
+<p>Changes are posted on this page and the effective date above is updated.</p>
+
+<h2>7. Contact</h2>
+<p>Privacy questions: <a href="mailto:jay@alcon-int.com">jay@alcon-int.com</a></p>
+</body>
+</html>
